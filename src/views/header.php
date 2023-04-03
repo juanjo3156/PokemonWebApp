@@ -8,3 +8,16 @@
     <title>Pokemon App</title>
 </head>
 <body>
+    <header class="header">
+        <div class="icono">
+            <h1>POKEMON PHP APP</h1>
+        </div>
+        <div class="menu">
+            <nav class="navegation">
+                <ul>
+                    <li><a href="#">Log in</a></li>
+                    <li><a href="#">Sing Up</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
