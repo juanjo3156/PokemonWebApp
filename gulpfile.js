@@ -8,4 +8,9 @@ function css(done){
     done();
 }
 
+function dev(){
+    watch('src/styles/**/*.scss',css);
+}
+
 exports.css = css;
+exports.dev = dev;
