@@ -1,0 +1,14 @@
+@use 'base/variables' as v;
+
+.header{
+    background-color:v.$primary_color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__icon{
+        text-transform: uppercase;
+        color: v.$white;
+        padding-left: 4rem;
+    }
+}

@@ -1,0 +1,24 @@
+@use 'base/variables' as v;
+
+.navigation{
+
+    &__ul{
+        
+        list-style: none;
+    }
+    &__li{
+        display: inline-block;
+        margin-right: .5rem;
+        padding: .5rem 2rem;
+        a{
+           
+            text-decoration: none;
+            color: v.$white;
+            font-size: 2rem;
+        }
+
+    }
+    &__li:hover{
+        background-color: v.$black;
+    }
+}
