@@ -1,0 +1,15 @@
+@use 'base/variables' as v;
+
+.footer{
+    background-color: v.$primary_color;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    &__copyright{
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: v.$white;
+        text-transform: uppercase;
+    }
+}
+

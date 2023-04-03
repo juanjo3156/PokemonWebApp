@@ -1,5 +1,5 @@
 <footer class="footer">
-    <p>Made by Juan José Ruiz Cruz</p>
+    <p class="footer__copyright">Made by: Juan José Ruiz Cruz</p>
 </footer>
 </body>
 </html>
