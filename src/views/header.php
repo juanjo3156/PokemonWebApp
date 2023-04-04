@@ -13,7 +13,7 @@
 <body>
     <header class="header">
         <div class="header__icon">
-            <h1>Pokemon php App</h1>
+            <h1>My favorite Pokemon app</h1>
         </div>
         <div class="header__bar">
             <nav class="navigation">

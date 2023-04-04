@@ -1,0 +1,48 @@
+@use 'base/variables' as v;
+
+.content{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    &__titulo{
+        color: v.$white;
+        text-align: center;
+        background-color: v.$primary_color;
+        padding: 1.5rem;
+        border-top-right-radius: 1rem;
+        border-top-left-radius: 1rem;
+        margin: 0;
+    }
+    
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    
+    border: .2rem solid #ddd;
+    padding: 1.3rem;
+    text-align: left;
+}
+
+th {
+    font-size: 1.9rem;
+    font-weight: 900;
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+tr:nth-child(odd) {
+    background-color: #f7c9c9;
+}
+
+.table__bottom{
+    height: 6rem;
+    background-color: v.$primary_color;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
