@@ -14,43 +14,14 @@
         </tr>
       </thead>
       <tbody>
+        <?php foreach($result as $pokemon){?>
         <tr>
-          <td>001</td>
-          <td>Bulbasaur</td>
-          <td>Planta/Veneno</td>
-          <td>Kanto</td>
+          <td><?php echo $pokemon['pkdex_num']?></td>
+          <td><?php echo $pokemon['name']?></td>
+          <td><?php echo $pokemon['type']?></td>
+          <td><?php echo $pokemon['region']?></td>
         </tr>
-        <tr>
-          <td>004</td>
-          <td>Charmander</td>
-          <td>Fuego</td>
-          <td>Kanto</td>
-        </tr>
-        <tr>
-          <td>007</td>
-          <td>Squirtle</td>
-          <td>Agua</td>
-          <td>Kanto</td>
-        </tr>
-        <tr>
-          <td>152</td>
-          <td>Chikorita</td>
-          <td>Planta</td>
-          <td>Johto</td>
-        </tr>
-        <tr>
-          <td>155</td>
-          <td>Cyndaquil</td>
-          <td>Fuego</td>
-          <td>Johto</td>
-        </tr>
-        <tr>
-          <td>158</td>
-          <td>Totodile</td>
-          <td>Agua</td>
-          <td>Johto</td>
-        </tr>
-      </tbody>
+        <?php }?>
     </table>
 
     <div class="table__bottom"></div>
