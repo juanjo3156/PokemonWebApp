@@ -14,6 +14,8 @@
     <header class="header">
         <div class="header__icon">
             <h1>My favorite Pokemon app</h1>
+
+            <img src="<?php echo RUTA;?>/src/img/pokeball.png" alt="">
         </div>
         <div class="header__bar">
             <nav class="navigation">
