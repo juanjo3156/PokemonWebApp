@@ -14,7 +14,7 @@
         </tr>
       </thead>
       <tbody>
-        <?php foreach($result as $pokemon){?>
+        <?php foreach($posts as $pokemon){?>
         <tr>
           <td><?php echo $pokemon['pkdex_num']?></td>
           <td><?php echo $pokemon['name']?></td>

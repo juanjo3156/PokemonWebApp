@@ -1,10 +1,13 @@
 <?php 
     require('user_admin/config.php');
     include('db.php');
+    require('functions.php');
 
-    $statement = $conection->prepare("SELECT * FROM pokemon_list");
-    $statement->execute();
 
-    $result = $statement->fetchAll(PDO::FETCH_ASSOC);
+    actual_page();
+
+    $posts = get_posts(5,$connection);
+
+    
     require('views/index.view.php'); 
 ?>
