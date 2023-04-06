@@ -1,0 +1,30 @@
+@use 'base/variables' as v;
+.pagination{
+    list-style: none;
+    text-align: center;
+    li{
+        background-color: v.$primary_color;
+        display: inline-block;
+        font-size: 2.3rem;
+        padding: .5rem 1rem;
+        font-weight: 700;
+        color: v.$white;
+        border: .2rem solid v.$black;
+        border-radius: .5rem;
+        margin: 0 .3rem;
+        
+        a{
+            text-decoration: none;
+            color: v.$white;
+        }
+    }
+    .disabled-btn{
+        background-color: #CDD4FA ;
+        border: .2rem solid #e2e2e2;
+    }
+    .active-btn{
+        background-color: #FCFF3D ;
+        color: v.$black;
+    }
+}
+
