@@ -25,6 +25,8 @@
     </table>
 
     <div class="table__bottom"></div>
+
+    <?php include('pagination.php');?>
     </div>
    
 <?php require('footer.php'); ?>
