@@ -3,11 +3,8 @@
     include('db.php');
     require('functions.php');
 
+    $posts = get_posts($page_config["post_by_page"],$connection);
 
-    actual_page();
 
-    $posts = get_posts(5,$connection);
-
-    
     require('views/index.view.php'); 
 ?>
