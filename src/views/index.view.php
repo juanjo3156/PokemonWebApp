@@ -11,6 +11,7 @@
           <th>Name</th>
           <th>Type</th>
           <th>Region</th>
+          <th>Action</th>
         </tr>
       </thead>
       <tbody>
@@ -20,6 +21,12 @@
           <td><?php echo $pokemon['name']?></td>
           <td><?php echo $pokemon['type']?></td>
           <td><?php echo $pokemon['region']?></td>
+          <td>
+            <form action="<? echo htmlspecialchars($_SERVER['PHP_SELF'])?>" method="post">
+              <input type="hidden" name="pokemon_id" value="<?php echo $pokemon['ID']?>">
+              <button type="submit">Agregar a favoritos</button>
+            </form>
+          </td>
         </tr>
         <?php }?>
     </table>
