@@ -25,3 +25,19 @@ h1{
 .active{
     display: block;
 }
+.btn-submit{
+    outline: none;
+    border-radius: .3rem;
+    border: 2px solid v.$black;
+    color: v.$white;
+    padding: .8rem;
+    background-color: #FE247A ;
+    font-weight: 700;
+    transition-property: scale;
+    transition-duration: 300ms;
+    &:hover{
+        background-color:#F90967 ;
+        cursor: pointer;
+        scale: 1.05;
+    }
+}
