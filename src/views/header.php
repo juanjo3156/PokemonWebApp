@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="<?php echo RUTA;?>/dist/css/app.css">
     <title>Pokemon App</title>
+    <script src="https://kit.fontawesome.com/9324a5a112.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="header">
