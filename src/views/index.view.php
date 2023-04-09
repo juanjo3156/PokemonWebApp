@@ -24,7 +24,7 @@
           <td>
             <form action="<? echo htmlspecialchars($_SERVER['PHP_SELF'])?>" method="post">
               <input type="hidden" name="pokemon_id" value="<?php echo $pokemon['ID']?>">
-              <button type="submit">Agregar a favoritos</button>
+              <button type="submit">Add to favorites</button>
             </form>
           </td>
         </tr>
