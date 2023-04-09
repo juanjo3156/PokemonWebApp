@@ -1,3 +1,5 @@
+<?php session_start(); 
+$_SESSION['logged_in'] = true?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,16 +16,29 @@
 <body>
     <header class="header">
         <div class="header__icon">
+        <a href="<?php echo RUTA_pag?>index.php">
+            
             <h1>My favorite Pokemon app</h1>
 
             <img src="<?php echo RUTA;?>/src/img/pokeball.png" alt="">
         </div>
+        </a>
+        
         <div class="header__bar">
+        
             <nav class="navigation">
-                <ul class="navigation__ul">
+                <?php if(isset($_SESSION['logged_in'])):?>
+                    <ul class="navigation__ul">
+                    <li class="navigation__li"><a href="#">Favorites</a></li>
+                    <li class="navigation__li"><a href="#">Log out</a></li>
+                    </ul>
+                <?php else: ?>
+                    <ul class="navigation__ul">
                     <li class="navigation__li"><a href="#">Log in</a></li>
                     <li class="navigation__li"><a href="#">Sing Up</a></li>
-                </ul>
+                    </ul>
+                <?php endif; ?>
+                
             </nav>
         </div>
     </header>

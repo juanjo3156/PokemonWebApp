@@ -5,16 +5,19 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    
     &__icon{
-        display: flex;
-        text-transform: uppercase;
-        color: v.$white;
-        padding-left: 2.5rem;
-        align-items: center;
+        a{
+            text-decoration: none; display: flex;
+            text-transform: uppercase;
+            color: v.$white;
+            padding-left: 2.5rem;
+            align-items: center;
+        }
+       
         h1{
-            order: 1;
             margin-left: 1.2rem;
+            order: 1;
         }
         img{
             padding: 3px;
