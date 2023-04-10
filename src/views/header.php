@@ -29,7 +29,7 @@
                 <?php if(isset($_SESSION['user'])):?>
                     <ul class="navigation__ul">
                     <li class="navigation__li"><a href="#">Favorites</a></li>
-                    <li class="navigation__li"><a href="#">Log out</a></li>
+                    <li class="navigation__li"><a href="<?php echo RUTA_pag?>/log_out.php">Log out</a></li>
                     </ul>
                 <?php else: ?>
                     <ul class="navigation__ul">

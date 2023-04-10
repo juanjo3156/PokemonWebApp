@@ -11,7 +11,9 @@
           <th>Name</th>
           <th>Type</th>
           <th>Region</th>
-          <th>Action</th>
+          <?php if(isset($_SESSION['user'])):?>
+            <th>Action</th>
+          <?php endif;?>
         </tr>
       </thead>
       <tbody>
@@ -21,12 +23,16 @@
           <td><?php echo $pokemon['name']?></td>
           <td><?php echo $pokemon['type']?></td>
           <td><?php echo $pokemon['region']?></td>
+          
+          <?php if(isset($_SESSION['user'])):?>
           <td class="action_column">
             <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>" method="post">
               <input type="hidden" name="pokemon_id" value="<?php echo $pokemon['id']?>">
               <button class = "btn-submit "type="submit">Add to favorites  <i class="fa-solid fa-heart"></i></button>
             </form>
           </td>
+          <?php endif;?>
+
         </tr>
         <?php }?>
     </table>
