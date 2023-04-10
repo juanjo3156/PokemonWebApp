@@ -3,6 +3,7 @@
         $data = trim($data);
         $data = stripslashes($data);
         $data = htmlspecialchars($data);
+        return $data;
     }   
     function actual_page(){
         return isset($_GET['p']) ? (int)$_GET['p'] : 1 ; 
