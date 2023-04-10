@@ -10,5 +10,12 @@
         <br>
         <input type="submit" value="Submit">
     </form>
+    <?php if($error!=''):?>
+        <div class="error">
+            <ul>
+                <?php echo $error?>
+            </ul>
+        </div>
+    <?php endif;?>
 </div>
 <?php include('footer.php'); ?>
