@@ -5,7 +5,7 @@
 
 
     $page_config = [
-        "post_by_page"=>20
+        "post_by_page"=>10
     ];
 ?>
 
