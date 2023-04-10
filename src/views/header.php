@@ -1,5 +1,4 @@
-<?php session_start(); 
-$_SESSION['logged_in'] = true?>
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,14 +26,14 @@ $_SESSION['logged_in'] = true?>
         <div class="header__bar">
         
             <nav class="navigation">
-                <?php if(isset($_SESSION['logged_in'])):?>
+                <?php if(isset($_SESSION['user'])):?>
                     <ul class="navigation__ul">
                     <li class="navigation__li"><a href="#">Favorites</a></li>
                     <li class="navigation__li"><a href="#">Log out</a></li>
                     </ul>
                 <?php else: ?>
                     <ul class="navigation__ul">
-                    <li class="navigation__li"><a href="#">Log in</a></li>
+                    <li class="navigation__li"><a href="<?php echo RUTA_pag?>/login.php">Log in</a></li>
                     <li class="navigation__li"><a href="#">Sing Up</a></li>
                     </ul>
                 <?php endif; ?>

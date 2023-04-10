@@ -1,5 +1,3 @@
-<?php session_start(); 
-$_SESSION['logged_in'] = true?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
