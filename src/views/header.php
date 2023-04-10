@@ -34,7 +34,7 @@
                 <?php else: ?>
                     <ul class="navigation__ul">
                     <li class="navigation__li"><a href="<?php echo RUTA_pag?>/login.php">Log in</a></li>
-                    <li class="navigation__li"><a href="#">Sing Up</a></li>
+                    <li class="navigation__li"><a href="<?php echo RUTA_pag?>/sign_up.php">Sing Up</a></li>
                     </ul>
                 <?php endif; ?>
                 

@@ -13,6 +13,13 @@
         <input type="email" name="email" class="login__input" placeholder="Enter your email">
         <input type="submit" value="Submit">
     </form>
+    <?php if($error!=''):?>
+        <div class="error">
+            <ul>
+                <?php echo $error?>
+            </ul>
+        </div>
+    <?php endif;?>
 
 </div>
 
