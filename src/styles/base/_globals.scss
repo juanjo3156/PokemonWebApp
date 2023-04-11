@@ -41,3 +41,20 @@ h1{
         scale: 1.05;
     }
 }
+.error{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    padding: 1rem;
+    background-color: #FF3C3C;
+    border-radius: 1rem;
+    color:#fda3a3;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    ul{
+        padding: 0;
+        list-style: none;
+    }
+}
