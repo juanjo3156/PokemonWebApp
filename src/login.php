@@ -17,6 +17,7 @@
 
         if($result != false){
             $_SESSION['user'] = $username;
+            $_SESSION['user_id']=$result['id'];
             header('Location:'.RUTA_pag.'index.php');
         }else{
             $error.= '<li>Incorrect username or password</li>';
