@@ -2,7 +2,7 @@
 
     <div class="container content">
     
-        <h2 class="content__titulo">Pokemon List</h2>
+        <h2 class="content__titulo">150 Pokemon List</h2>
         <table>
       <thead>
         <tr>
